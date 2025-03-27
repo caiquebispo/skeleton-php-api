@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Skeleton\\SkeletonPhpApplication\\": "src/"
+            "Skeleton\\SkeletonPhpApplication\\": "App/"
         }
     },
     "authors": [
@@ -20,5 +20,8 @@
         "illuminate/http": "^12.3",
         "illuminate/container": "^12.3",
         "illuminate/events": "^12.3"
+    },
+    "scripts": {
+        "migration-create": "Skeleton\\SkeletonPhpApplication\\Core\\Migration::create"
     }
 }

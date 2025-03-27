@@ -1,5 +1,6 @@
 <?php
 
-$app['router']->get('/', function () {
-    return 'Hello World!';
-});
+
+use Skeleton\SkeletonPhpApplication\Controllers\HomeController;
+
+$app['router']->get('/', [HomeController::class, 'index']);
