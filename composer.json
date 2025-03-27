@@ -1,0 +1,17 @@
+{
+    "name": "skeleton/skeleton-php-application",
+    "description": "Este é uma estrutura de projeto em PHP puro moderno usando os mais variados recursos disponível na comunidade.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Skeleton\\SkeletonPhpApplication\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Caique Bispo",
+            "email": "caiquebispodanet86@gmail.com"
+        }
+    ],
+    "require": {}
+}
