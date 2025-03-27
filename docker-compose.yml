@@ -1,0 +1,10 @@
+services:
+
+  app:
+    build: .
+    container_name: skeleton-app-php
+    volumes:
+      - .:/var/www/html
+    command: php -S 0.0.0.0:8001 -t public/
+    ports:
+      - "8001:8001"
