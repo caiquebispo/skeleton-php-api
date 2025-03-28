@@ -7,6 +7,7 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
 ## Requisitos
 
 - Vesao do PHP 8.4
+- Docker
 - Composer
 
 ## Instalação
@@ -16,21 +17,30 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
     git clone https://github.com/caiquebispo/skeleton-php-application.git
     cd skeleton-php-application
     ```
-2. Entrando no contêiner:
+
+2. Subindo container:
+    ```sh
+    docker compose up --build -d
+    ```
+
+3. Entrando no contêiner:
     ```sh
     docker exec -it skeleton-php-application bash
     ```
    
-3. Instale as dependências:
+4. Instale as dependências:
     ```sh
     composer install
     ```
 
-4. Configure o arquivo `.env`:
+5. Configure o arquivo `.env`:
     ```sh
     cp .env.exemple .env
     ```
-
+Aplicação está rodando na porta 8001
+ ```sh
+    http://localhost:8001/
+    ``` 
 ## Estrutura do Projeto
 
 - `App/Controllers`: Contém os controladores da aplicação.
@@ -64,10 +74,11 @@ Para criar um novo model, utilize o comando:
 ```sh
 composer model-create Profiles
 ```
+
 Para criar um novo controler, utilize o comando:
 
 ```sh
-composer controller-create ProfileController
+composer controller-create ProfileCodntroller
 composer controller-create Profiles/StoreController
 ```
 
