@@ -38,9 +38,7 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
     cp .env.exemple .env
     ```
 Aplicação está rodando na porta 8001
-    ```sh
-    http://localhost:8001
-    ```
+`http://localhost:8001`
 
 ## Estrutura do Projeto
 

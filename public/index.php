@@ -7,9 +7,8 @@ use Illuminate\Events\EventServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Routing\RoutingServiceProvider;
 use Skeleton\SkeletonPhpApplication\Core\Connection;
-use Skeleton\SkeletonPhpApplication\Core\Migration;
+use Skeleton\SkeletonPhpApplication\Core\Console\Migration;
 use Skeleton\SkeletonPhpApplication\Core\Response;
-
 
 require_once  __DIR__ . '/../vendor/autoload.php';
 
