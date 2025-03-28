@@ -22,7 +22,7 @@ class Migration
     }
     public static function loadMigrationFiles(): void
     {
-        foreach (glob(__DIR__ . '/../../../database/migrations/*.php') as $file) {
+        foreach (glob(__DIR__ . '/../../database/migrations/*.php') as $file) {
             require_once $file;
         }
     }
@@ -33,7 +33,7 @@ class Migration
     private static function generateMigrationFilename($migrationName): string
     {
         $timestamp = date('Y_m_d_His');
-        $directory = __DIR__ . '/../../../database/migrations/';
+        $directory = __DIR__ . '/../../database/migrations/';
         return "{$directory}{$timestamp}_{$migrationName}.php";
     }
     private static function generateMigrationTemplate($migrationName): string
