@@ -53,14 +53,23 @@ DB_PASSWORD=""
 
 ## Uso
 
-### Criar uma Nova Migração
-
+### Comandos
 Para criar uma nova migração, utilize o comando:
 
 ```sh
-composer migration-create NomeDaMigration
+composer migration-create profiles
 ```
+Para criar um novo model, utilize o comando:
 
+```sh
+composer model-create Profiles
+```
+Para criar um novo controler, utilize o comando:
+
+```sh
+composer controller-create ProfileController
+composer controller-create Profiles/StoreController
+```
 
 ### Executar Migrações
 
