@@ -25,7 +25,7 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
 
 3. Entrando no contêiner:
     ```sh
-    docker exec -it skeleton-php-application bash
+    docker exec -it skeleton-app-php bash
     ```
    
 4. Instale as dependências:
