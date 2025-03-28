@@ -84,6 +84,7 @@ class Controller
 
 {$namespace}
 use Illuminate\Http\Request;
+use Skeleton\SkeletonPhpApplication\Core\Response;
 use Illuminate\Routing\Controller;
 
 class {$className} extends Controller
