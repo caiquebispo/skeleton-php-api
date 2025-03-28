@@ -13,16 +13,20 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
 
 1. Clone o repositório:
     ```sh
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/caiquebispo/skeleton-php-application.git
     cd skeleton-php-application
     ```
-
-2. Instale as dependências:
+2. Entrando no contêiner:
+    ```sh
+    docker exec -it skeleton-php-application bash
+    ```
+   
+3. Instale as dependências:
     ```sh
     composer install
     ```
 
-3. Configure o arquivo `.env`:
+4. Configure o arquivo `.env`:
     ```sh
     cp .env.exemple .env
     ```
@@ -49,14 +53,6 @@ DB_PASSWORD=""
 
 ## Uso
 
-### Executar Migrações
-
-Para executar todas as migrações, utilize o comando:
-
-```sh
-composer migration-up
-```
-
 ### Criar uma Nova Migração
 
 Para criar uma nova migração, utilize o comando:
@@ -64,6 +60,11 @@ Para criar uma nova migração, utilize o comando:
 ```sh
 composer migration-create NomeDaMigration
 ```
+
+
+### Executar Migrações
+
+As migrations são executadas automaticamente ao iniciar o contêiner:
 
 ### Exemplo de Controlador
 
