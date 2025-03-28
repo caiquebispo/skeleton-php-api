@@ -22,6 +22,8 @@
         "illuminate/events": "^12.3"
     },
     "scripts": {
-        "migration-create": "Skeleton\\SkeletonPhpApplication\\Core\\Migration::create"
+        "migration-create": "Skeleton\\SkeletonPhpApplication\\Core\\Console\\Migration::create",
+        "controller-create": "Skeleton\\SkeletonPhpApplication\\Core\\Console\\Controller::create",
+        "model-create": "Skeleton\\SkeletonPhpApplication\\Core\\Console\\Model::create"
     }
 }

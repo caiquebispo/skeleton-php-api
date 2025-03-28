@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-
 // Cria a tabela de users se não existir
 if (!Capsule::schema()->hasTable('users')) {
 
@@ -14,5 +13,6 @@ if (!Capsule::schema()->hasTable('users')) {
         $table->string('remember_token')->nullable();
         $table->timestamps();
     });
-
+    
 }
+

@@ -1,6 +1,6 @@
 <?php
 
-namespace Skeleton\SkeletonPhpApplication\Core;
+namespace Skeleton\SkeletonPhpApplication\Core\Console;
 
 class Migration
 {

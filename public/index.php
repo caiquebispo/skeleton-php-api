@@ -7,8 +7,8 @@ use Illuminate\Events\EventServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Routing\RoutingServiceProvider;
 use Skeleton\SkeletonPhpApplication\Core\Connection;
-use Skeleton\SkeletonPhpApplication\Core\Migration;
-
+use Skeleton\SkeletonPhpApplication\Core\Console\Migration;
+use Skeleton\SkeletonPhpApplication\Core\Response;
 
 require_once  __DIR__ . '/../vendor/autoload.php';
 
@@ -34,6 +34,10 @@ with(new RoutingServiceProvider($app))->register();
 
 require_once __DIR__ . '/../routes/web/web.php';
 require_once __DIR__ . '/../routes/api/api.php';
+
+$app['router']->fallback(function () {
+    return (new Response())->json(['message' => 'Route Not Found'])->status(404);
+});
 
 $request = Request::createFromGlobals();
 $response = $app['router']->dispatch($request);
