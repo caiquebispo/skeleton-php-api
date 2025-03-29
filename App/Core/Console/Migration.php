@@ -18,6 +18,7 @@ class Migration
         $template = self::generateMigrationTemplate($migrationName);
 
         file_put_contents($filename, $template);
+        chmod($filename, 0777);
         echo "Migration criada: $filename\n";
     }
     public static function loadMigrationFiles(): void

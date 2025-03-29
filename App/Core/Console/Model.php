@@ -114,5 +114,6 @@ class {$className} extends Model
 PHP;
 
         file_put_contents($filePath, $content);
+        chmod($filePath, 0777);
     }
 }

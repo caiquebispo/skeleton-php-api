@@ -100,5 +100,6 @@ class {$className} extends Controller
 PHP;
 
         file_put_contents($filePath, $content);
+        chmod($filePath, 0777);
     }
 }
