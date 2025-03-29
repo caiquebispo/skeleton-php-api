@@ -2,7 +2,7 @@ services:
 
   app:
     build: .
-    container_name: skeleton-app-php
+    container_name: skeleton-app-api
     volumes:
       - .:/var/www/html
     command: php -S 0.0.0.0:8001 -t public/
