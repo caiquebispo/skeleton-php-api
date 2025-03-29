@@ -15,7 +15,7 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
 1. Clone o repositório:
     ```sh
     git clone https://github.com/caiquebispo/skeleton-php-application.git
-    cd skeleton-php-application
+    cd skeleton-php-api
     ```
 
 2. Subindo container:
@@ -25,7 +25,7 @@ Este é uma estrutura de projeto em PHP puro moderno usando os mais variados rec
 
 3. Entrando no contêiner:
     ```sh
-    docker exec -it skeleton-app-php bash
+    docker exec -it skeleton-app-api bash
     ```
    
 4. Instale as dependências:
